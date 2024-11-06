@@ -3,10 +3,22 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/mohirdev
-    username: mohirdev
-    password: 1234
+    username: postgres
+    password: 2702
   jpa:
     hibernate:
       naming:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
       ddl-auto: update
+upload:
+  server:
+    folder: /Users/bahriddin/Desktop/windows works/upload/
+
+api:
+  jsonplaceholder: https://jsonplaceholder.typicode.com
+
+
+jwt:
+  token:
+    secret: hellojwttoken
+    validity: 86400000

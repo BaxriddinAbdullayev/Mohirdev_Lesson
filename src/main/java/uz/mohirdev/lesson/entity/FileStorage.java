@@ -25,6 +25,8 @@ public class FileStorage implements Serializable {
 
     private String hashId;
 
+    private String uploadFolder;
+
     private FileStorageStatus fileStorageStatus;
 
     public Long getId() {
@@ -81,5 +83,13 @@ public class FileStorage implements Serializable {
 
     public void setFileStorageStatus(FileStorageStatus fileStorageStatus) {
         this.fileStorageStatus = fileStorageStatus;
+    }
+
+    public String getUploadFolder() {
+        return uploadFolder;
+    }
+
+    public void setUploadFolder(String uploadFolder) {
+        this.uploadFolder = uploadFolder;
     }
 }
